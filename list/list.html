@@ -1,0 +1,169 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Hotels</title>
+        <link rel="stylesheet" type="text/css" href="../style-2.css">
+        <script src="https://kit.fontawesome.com/3ef224f26a.js" crossorigin="anonymous"></script> 
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+        <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script>
+         $(function() {
+            $( "#slider-3" ).slider({
+               range:true,
+               min: 0,
+               max: 1000,
+               values: [ 200, 800 ],
+               slide: function( event, ui ) {
+                  $( "#price" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+               }
+            });
+            $( "#price" ).val( "$" + $( "#slider-3" ).slider( "values", 0 ) +
+               " - $" + $( "#slider-3" ).slider( "values", 1 ) );
+         });
+        </script>   
+    </head>
+    <body>
+        <header>
+            <div class="menu">
+                <h2 class="logo">Hotels</h2>   
+                <a href="../index/index.html"><i class="fas fa-home"></i>Home</a>
+                <a href="../login/login.html"><i class="fas fa-user"></i>Profile</a>
+            </div>
+        </header>
+        <main>
+        	<button onclick="topFunction()" id="myBtn" title="Go to top">^<br>Top</button>
+        	<script>
+				    var mybutton = document.getElementById("myBtn");
+
+				    window.onscroll = function() {scrollFunction()};
+
+			      function scrollFunction() {
+ 				     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+   					  mybutton.style.display = "block";
+ 				     } else {
+    				    mybutton.style.display = "none";
+  				    }
+				    }
+			      function topFunction() {
+  			    document.body.scrollTop = 0;
+	  		    document.documentElement.scrollTop = 0;
+			     }
+			    </script>
+          <script>
+            $( function() {
+            $( "#datepicker1" ).datepicker();
+            } );
+          </script>    
+          <script>
+            $( function() {
+            $( "#datepicker2" ).datepicker();
+            } );
+          </script>   
+            <aside>
+                <section id="filters" class="filters">
+                    <form action="index.php" method="GET">
+                        <h5>FIND THE PERFECT HOTEL</h5>
+                        <select name="Count of Guests">
+                          <option value="0" disabled selected>Count of Guests</option>
+                          <option value="One">1</option>  
+                          <option value="Two">2</option>
+                          <option value="Three">3</option>  
+                          <option value="Four">4</option>
+                        </select>
+                        <br>
+                        <select name="Room Type">
+                          <option value="0" disabled selected>Room Type</option>
+                          <option value="Single">Single</option>  
+                          <option value="Double">Double</option>
+                          <option value="Triple">Triple</option>  
+                          <option value="Quad">Quad</option>
+                        </select>
+                        <br>
+                        <select name="City">
+                          <option value="0" disabled selected>City</option>
+                          <option value="Athens">Athens</option>  
+                          <option value="Thessaloniki">Thessaloniki</option>   
+                          <option value="Kavala">Kavala</option>   
+                          <option value="Santorini">Santorini</option>      
+                        </select>
+                        <br>
+                        <div class="slider">
+                          <input type = "text" id = "price" style = "border:0; color:#FF8C00; font-size: 13px; width: 80px; font-weight:bold;">
+                          <div id = "slider-3" style="width:165px;"></div>
+                        </div>
+                        <br>
+                        <input type="text" name="check-in date" id="datepicker1" class="datepicker-01" placeholder="Check-in Date">
+                        <input type="text" name="check-out date" id="datepicker2" class="datepicker-02" placeholder="Check-out Date">
+                        <div class="action">
+                          <button type="submit" class="filter-btn">
+                              FIND HOTEL
+                            </button>  
+                        </div>
+                    </form>
+                </section>
+            </aside>
+            <section class="rooms">
+                <div class="search">
+                  Search Results 
+                </div>
+              <article class="room-02">
+                <img src="../img/room-2.jpg" alt="Megali Vretania Hotel"/>
+                <h3 class="title">MEGALI VRETANIA HOTEL</h3>
+                <h4 class="location">ATHENS, SYNTAGMA</h4>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et molestie ac feugiat sed lectus vestibulum mattis. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Purus viverra accumsan in nisl nisi scelerisque eu ultrices. Ut ornare lectus sit amet est placerat in egestas erat. 
+                </p>
+                <input type="button" onclick="document.location='../room/room-2/room-2.html'" value="Go to Room Page" name="Go to Room Page" id="Go to Room Page"/>
+                <div class="infos">
+                  <div class="per-night">
+                    Per Night: 500€
+                  </div>
+                  <div class="count-of-guests">
+                    Count of Guests: 2
+                  </div>
+                  <div class="type-of-room">
+                    Type of Room: Double
+                  </div>
+                </div>
+              </article>
+              <article class="room-03">
+                <img src="../img/room-3.jpg" alt="Apollo Hotel"/>
+                <h3 class="title">APOLLO HOTEL</h3>
+                <h4 class="location">ATHENS, KENTRO</h4>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et molestie ac feugiat sed lectus vestibulum mattis. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Purus viverra accumsan in nisl nisi scelerisque eu ultrices. Ut ornare lectus sit amet est placerat in egestas erat. 
+                </p>
+                <input type="button" onclick="document.location='../room/room-3/room-3.html'" value="Go to Room Page" name="Go to Room Page" id="Go to Room Page"/>
+                <div class="infos">
+                 <div class="per-night">
+                    Per Night: 420€
+                 </div>
+                  <div class="count-of-guests">
+                    Count of Guests: 3
+                  </div>
+                  <div class="type-of-room">
+                    Type of Room: Triple
+                  </div>
+                </div>
+              </article>
+            </section>
+          <hr class="end">
+        </main>
+        <footer>
+          <p class="copyright">© College Link 2021</p>
+        </footer>
+    </body>
+</html>

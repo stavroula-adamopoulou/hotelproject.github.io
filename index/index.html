@@ -1,0 +1,72 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta name="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Hotels</title>
+        <link rel="stylesheet" type="text/css" href="../style-1.css">
+        <script src="https://kit.fontawesome.com/3ef224f26a.js" crossorigin="anonymous"></script> 
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+        <script>
+            $( function() {
+            $( "#datepicker1" ).datepicker();
+            } );
+        </script>    
+        <script>
+            $( function() {
+            $( "#datepicker2" ).datepicker();
+            } );
+        </script>   
+    </head>
+    <body>
+        <header>
+            <div class="menu">
+                <h2 class="logo">Hotels</h2>   
+                <a href="../index/index.html"><i class="fas fa-home"></i>Home</a>
+                <a href="../login/login.html"><i class="fas fa-user"></i>Profile</a>
+            </div>
+        </header>
+        <main>
+          <div class="container">
+                <section id="form" class="form">
+                    <form action="../list/list.html" method="GET">
+                        <select name="City">
+                          <option value="0" disabled selected>City</option>
+                          <option value="Athens">Athens</option>  
+                          <option value="Thessaloniki">Thessaloniki</option>   
+                          <option value="Kavala">Kavala</option>   
+                          <option value="Santorini">Santorini</option>      
+                        </select>
+                        <select name="Room Type">
+                          <option value="0" disabled selected>Room Type</option>
+                          <option value="Single">Single</option>  
+                          <option value="Double">Double</option>
+                          <option value="Triple">Triple</option>  
+                          <option value="Quad">Quad</option>
+                        </select>
+                        <br>
+                        <input type="text" name="check-in date" id="datepicker1" class="datepicker-01" placeholder="Check-in Date">
+                        <input type="text" name="check-out date" id="datepicker2" class="datepicker-02" placeholder="Check-out Date">
+                        <div class="action">
+                            <button type="submit" class="btn">
+                              Search
+                            </button>  
+                        </div>
+                    </form>
+                </section>
+              </div>
+        </main> 
+     </div>
+        <footer>
+            <p class="copyright">© College Link 2021</p>
+        </footer>
+    </body>
+</html>
