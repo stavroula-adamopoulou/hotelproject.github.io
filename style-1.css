@@ -357,6 +357,10 @@ input[type=checkbox] {
 		height: 45px;
   	}
   	
+	.form .datepicker-02 {
+	        margin-top: 0;
+	}
+	
 	.form {
 		width: 90%;
 		padding: 30px;
