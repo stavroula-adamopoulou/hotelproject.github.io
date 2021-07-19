@@ -353,7 +353,7 @@ input[type=checkbox] {
 
 	/*Index page*/
    	select, .form .datepicker-01, .form .datepicker-02  {
-   		width: 100%;
+   		width: 90%;
 		height: 45px;
   	}
   	
