@@ -364,21 +364,21 @@ input[type=checkbox] {
 	.form {
 		width: 90%;
 		padding: 30px;
-		height: 50%;
+		height: 65%;
 		margin-top: -50px;
 	}
 
 	/*Login page*/
 	.login {	
 		width: 90%;
-		height: 60%;
+		height: 70%;
 		font-size: 14px;
 	}
 
 	/*Register page*/
 	.register {	
 		width: 90%;
-		height: 60%;
+		height: 70%;
 		font-size: 14px;
 	}
 }
