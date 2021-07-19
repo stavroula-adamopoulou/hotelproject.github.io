@@ -207,7 +207,7 @@ footer{
 }
  
 .infos {
-	height: 40px; 
+    height: 40px; 
     width: 660px;
     background-color: #A9A9A9;
     margin-top: 280px;
@@ -219,18 +219,18 @@ footer{
     text-align: center;
 }
 
-.per-night {
+.infos .per-night {
 	font-size: 14px;
 	color: white;
 	margin: 20px;
 }
 
-.count-of-guests, .type-of-room {
+.infos .count-of-guests, .infos .type-of-room {
 	font-size: 14px;
 	color: white;
 }
 
-.count-of-guests, .type-of-room{
+.infos .count-of-guests, .infos .type-of-room{
 	margin: 20px;
 }
 
@@ -312,6 +312,7 @@ img {
  
 .menu-container {
  	color: white;
+	font-size: 11px;
 	background-color: #FF8C00;
    	height: 70px; 
    	width: 650px;
@@ -326,14 +327,13 @@ img {
    	margin-bottom: 30px;
 }
 
-.guests, .type-room, .parking, .wi-fi {
-	font-size: 11px;
+.menu-container .guests, .menu-container .type-room, .menu-container .parking, .menu-container .wi-fi {
 	border-right: 2px dashed white;
 	padding: 5px;
 	width: 20%;
 }
 
-.pet {
+.menu-container .pet {
 	font-size: 11px;
 	padding: 5px;
 	width: 20%;
