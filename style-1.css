@@ -367,10 +367,14 @@ input[type=checkbox] {
 	/*Login page*/
 	.login {	
 		width: 90%;
+		height: 60%;
+		font-size: 14px;
 	}
 
 	/*Register page*/
 	.register {	
 		width: 90%;
+		height: 60%;
+		font-size: 14px;
 	}
 }
