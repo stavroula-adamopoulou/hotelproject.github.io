@@ -90,10 +90,10 @@ footer{
   	text-align: center;
   	position: absolute;
   	left: 50%;
-    transform: translate(-50%, 0);
-    -webkit-transform: translate(-50%, 0);
-    z-index: 2;
-    opacity: 0.8;   	
+    	transform: translate(-50%, 0);
+    	-webkit-transform: translate(-50%, 0);
+    	z-index: 2;
+    	opacity: 0.8;   	
 }
 	
 select {
@@ -352,13 +352,15 @@ input[type=checkbox] {
 	}
 
 	/*Index page*/
-   	select, .form .datepicker-01, .form .datepicker-02  {
+   	select .datepicker-01, .form .datepicker-02  {
    		width: 100%;
+		height: 49px;
   	}
   	
 	.form {
+		width: 90%;
 		padding: 30px;
-		height: 450px;
+		height: 400px;
 		margin-top: -80px;
 	}
 
