@@ -29,8 +29,11 @@ footer{
 	width: 100%;
 	border-top: 3px solid gray;
 	text-align: center;
+	font-family: Zen Loop;
+	font-weight: bold;
 	font-size: 15px;
 	font-color: black;	
+	letter-spacing: 10px;
 }
 
 .logo {
@@ -55,16 +58,16 @@ footer{
 }
 
 .menu a:hover {
-    	opacity: 0.5;
-    	transition: 0.5s ease-in-out;
+    opacity: 0.5;
+    transition: 0.5s ease-in-out;
 }
 
 .menu {
 	display: flex;
-    	justify-content: center;
-   	 align-items: center;
-   	 text-align: center;
-   	 font-family: Zen Loop;
+    justify-content: center;
+   	align-items: center;
+   	text-align: center;
+   	font-family: Zen Loop;
 }
 
 /*Index page*/
@@ -81,7 +84,7 @@ footer{
 }
 
 .form {
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.6);
 	box-sizing: border-box;
 	border-radius: 8px;
 	border: 2px solid lightgray;
@@ -90,10 +93,9 @@ footer{
   	text-align: center;
   	position: absolute;
   	left: 50%;
-    	transform: translate(-50%, 0);
-    	-webkit-transform: translate(-50%, 0);
-    	z-index: 2;
-    	opacity: 0.8;   	
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    z-index: 2;  	
 }
 	
 select {
@@ -113,7 +115,7 @@ select:hover{
 }
 
 .form .datepicker-01, .form .datepicker-02 {
-    	height: 55px; 
+    height: 55px; 
 	width: 165px;
 	border-radius: 5px;
 	border-color: lightgray;
@@ -136,9 +138,9 @@ select:hover{
 }
 
 .btn:hover {
-    	cursor: pointer;
-    	opacity: 0.5;
-    	transition: 1s ease-in-out;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 1s ease-in-out;
 }
 
 /*Login page*/
@@ -330,43 +332,55 @@ input[type=checkbox] {
 
 	/*Header & footer*/
 	.logo {
-		font-size: 25px;
-		letter-spacing: 13px;
+		font-size: 19px;
+		letter-spacing: 10px;
+		padding-left: 5px;
 	}
 
 	.menu a {
-		font-size: 	17px;
-		letter-spacing: 7px;
+		font-size: 	14px;
+		letter-spacing: 5px;
 	}
 
 	.fa-home {
-		padding-left: 50px;
+		padding-left: 20px;
 	}
 
 	.fa-user {
-		padding-left: 15px;
+		padding-left: 7px;
 	}
 
 	footer {
+		font-size: 	13px;
 		height: 40px;
+		letter-spacing: 5px;
 	}
 
 	/*Index page*/
    	select, .form .datepicker-01, .form .datepicker-02  {
    		width: 90%;
-		height: 45px;
+		height: 15%;
+		min-height: 45px;
   	}
   	
 	.form .datepicker-02 {
-	        margin-top: 0;
+	    margin-top: -15px;
 	}
 	
 	.form {
 		width: 90%;
 		padding: 30px;
-		height: 65%;
-		margin-top: -50px;
+		height: 70%;
+		margin-top: -30px;
 	}
+
+	.btn {
+		height: 12%;
+		width: 40%;
+		font-size: 15px;
+		margin-top: -10px;		
+	}
+
 
 	/*Login page*/
 	.login {	
